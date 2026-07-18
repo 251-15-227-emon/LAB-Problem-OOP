@@ -1,25 +1,31 @@
 package Lab_03;
 
-interface Transaction{
+// Interface
+interface Transaction {
 
-void deposit(double amount);
-void withdraw (double amount );
+    void deposit(double amount);
+
+    void withdraw(double amount);
 
 }
 
-
+// Abstraction 
 abstract class Account {
 
-double balance;
+    double balance;
 
-Account (double balance){
+    Account(double balance) {
 
-this.balance=balance;
+        this.balance = balance;
 
+    }
+
+    abstract void yearly();
+
+    abstract void loan();
 }
-abstract void yearly ();
-abstract void loan ();
-}
+
+//Savings Account 
 class Savings extends Account implements Transaction {
 
     public Savings(double balance) {
@@ -60,8 +66,7 @@ class Savings extends Account implements Transaction {
     }
 }
 
-//==================== Current Account ====================
-
+//Current Account
 class Current extends Account implements Transaction {
 
     public Current(double balance) {
@@ -102,8 +107,7 @@ class Current extends Account implements Transaction {
     }
 }
 
-//==================== Main Class ====================
-
+//Main Class 
 public class Bank {
 
     public static void main(String[] args) {
@@ -136,4 +140,3 @@ public class Bank {
         c.loan();
     }
 }
-
