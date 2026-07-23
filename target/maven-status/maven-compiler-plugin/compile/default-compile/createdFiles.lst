@@ -4,12 +4,15 @@ LAB_04\PaymentProblem.class
 LAB_04\CreditCardPayment.class
 LAB_01\Book.class
 LAB_01\Problem_01.class
+LAB_05\Payment.class
 Lab_03\Bank.class
 Lab_03\Account.class
+LAB_05\CreditCardPayment.class
 LAB_02\Account.class
 LAB_02\SavingsAccount.class
 LAB_02\Deposit.class
 LAB_02\Problem_01.class
 Lab_03\Transaction.class
+LAB_05\Example_01.class
 Lab_03\Savings.class
 Lab_03\Current.class
