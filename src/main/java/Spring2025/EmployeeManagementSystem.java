@@ -84,6 +84,13 @@ public class EmployeeManagementSystem {
     
     public static void main(String[] args) {
         
+        Employee e1 = new Femployee("Emon",1001,15500,2000);
+        
+        e1.calculateSalary();
+        
+        Employee e2 =new contractEmployee("Promit",1002,12000,2);
+        
+        e2.calculateSalary();
     }
 
 }
