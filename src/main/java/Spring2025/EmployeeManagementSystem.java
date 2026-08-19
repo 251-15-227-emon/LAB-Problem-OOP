@@ -28,9 +28,19 @@ class Employee {
 
 }
 
+abstract class permanentEmployee extends Employee {
 
+    int bonous;
 
+    permanentEmployee(String name, int id, double salary) {
 
+        super(name, id, salary);
+
+    }
+
+    abstract void calculateSalary();
+
+}
 
 public class EmployeeManagementSystem {
 
