@@ -32,9 +32,10 @@ abstract class permanentEmployee extends Employee {
 
     int bonous;
 
-    permanentEmployee(String name, int id, double salary) {
+    permanentEmployee(String name, int id, double salary, int bonous) {
 
         super(name, id, salary);
+        this.bonous = bonous;
 
     }
 
@@ -42,6 +43,47 @@ abstract class permanentEmployee extends Employee {
 
 }
 
+class contractEmployee extends Employee {
+
+    int contractPeriod;
+
+    contractEmployee(String name, int id, double salary, int contractPeriod) {
+
+        super(name, id, salary);
+        this.contractPeriod = contractPeriod;
+
+    }
+
+    void calculateSalary() {
+
+        System.out.println("Contract Salary :" + salary);
+
+    }
+
+}
+
+class Femployee extends permanentEmployee {
+
+    Femployee(String name, int id, double salary, int bonous) {
+
+        super(name, id, salary, bonous);
+
+    }
+
+    @Override
+    void calculateSalary() {
+        System.out.println("Full Time Employee Salary :" + salary);
+    }
+
+}
+
 public class EmployeeManagementSystem {
+    
+    
+    
+    
+    public static void main(String[] args) {
+        
+    }
 
 }
