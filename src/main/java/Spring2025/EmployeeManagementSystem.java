@@ -78,19 +78,20 @@ class Femployee extends permanentEmployee {
 }
 
 public class EmployeeManagementSystem {
-    
-    
-    
-    
+
     public static void main(String[] args) {
-        
-        Employee e1 = new Femployee("Emon",1001,15500,2000);
-        
+
+        Employee e1 = new Femployee("Emon", 1001, 15500, 2000);
+        Employee e2 = new contractEmployee("Promit", 1002, 12000, 2);
+
+        e1.details();
         e1.calculateSalary();
-        
-        Employee e2 =new contractEmployee("Promit",1002,12000,2);
-        
+
+        System.out.println();
+
+        e2.details();
         e2.calculateSalary();
+
     }
 
 }
